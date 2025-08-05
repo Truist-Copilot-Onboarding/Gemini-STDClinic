@@ -1,1 +1,1 @@
-# Gemini-STDClinic
+# GeminiDental

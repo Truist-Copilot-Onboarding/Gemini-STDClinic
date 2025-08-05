@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemini Dental - Your Trusted Family Dentist</title>
+    <title>Gemini STD Clinic - Confidential Testing in Charlotte, NC</title>
+    <meta name="description" content="Professional, confidential STD testing services in Charlotte, North Carolina. Quick results, same-day appointments available.">
+    
     <style>
-        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
@@ -13,604 +14,457 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f9f9f9;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
         }
         
         .container {
-            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
         
-        section {
-            padding: 60px 0;
-        }
-        
-        h2 {
-            font-size: 36px;
-            margin-bottom: 30px;
-            color: #1a6fb0;
-            text-align: center;
-        }
-        
-        h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #1a6fb0;
-        }
-        
-        p {
-            margin-bottom: 15px;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: #1a6fb0;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
-        
-        .btn:hover {
-            background-color: #0d5c9e;
-            transform: translateY(-2px);
-        }
-        
-        .text-center {
-            text-align: center;
-        }
-        
-        /* Header Styles */
+        /* Header */
         header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: sticky;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .header-container {
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
         }
         
         .logo {
-            display: flex;
-            align-items: center;
+            font-size: 1.8rem;
+            font-weight: bold;
         }
         
-        .logo img {
-            height: 50px;
-            margin-right: 10px;
-        }
-        
-        .logo h1 {
-            font-size: 24px;
-            color: #1a6fb0;
-        }
-        
-        nav ul {
+        .nav-links {
             display: flex;
             list-style: none;
+            gap: 2rem;
         }
         
-        nav ul li {
-            margin-left: 25px;
-        }
-        
-        nav ul li a {
+        .nav-links a {
+            color: white;
             text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
         
-        nav ul li a:hover {
-            color: #1a6fb0;
+        .nav-links a:hover {
+            color: #93c5fd;
+        }
+        
+        .cta-button {
+            background: #dc2626;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #b91c1c;
         }
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/placeholder.svg?height=800&width=1600') no-repeat center center;
-            background-size: cover;
+            background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(29, 78, 216, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f8fafc" width="1200" height="600"/><circle fill="%23e2e8f0" cx="200" cy="150" r="50" opacity="0.5"/><circle fill="%23cbd5e1" cx="800" cy="400" r="80" opacity="0.3"/><circle fill="%23e2e8f0" cx="1000" cy="200" r="60" opacity="0.4"/></svg>');
+            color: white;
+            padding: 120px 0 80px;
             text-align: center;
-            padding: 100px 0;
+            background-size: cover;
+            background-position: center;
         }
         
-        .hero h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
         
         .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: 0 auto 30px;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: #dc2626;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #b91c1c;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #2563eb;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1e293b;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+            color: white;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        
+        .feature-card p {
+            color: #64748b;
         }
         
         /* Services Section */
         .services {
-            background-color: white;
+            padding: 80px 0;
+            background: white;
         }
         
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .service-card {
-            background-color: #f5f9fd;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-img {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .service-content {
-            padding: 20px;
-        }
-        
-        /* About Section */
-        .about {
-            background-color: #f5f9fd;
-        }
-        
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-        
-        /* Team Section */
-        .team {
-            background-color: white;
-        }
-        
-        .team-grid {
-            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            gap: 1.5rem;
         }
         
-        .team-member {
-            text-align: center;
+        .service-item {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
         }
         
-        .team-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 20px;
-            border: 5px solid #f5f9fd;
+        .service-item h4 {
+            color: #1e293b;
+            margin-bottom: 0.5rem;
         }
         
-        .team-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        /* Testimonials Section */
-        .testimonials {
-            background-color: #f5f9fd;
-        }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .testimonial-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
-            font-weight: bold;
-            color: #1a6fb0;
-        }
-        
-        /* Promotions Section */
-        .promotions {
-            background: linear-gradient(to right, #1a6fb0, #64b5f6);
-            color: white;
-        }
-        
-        .promotions h2 {
-            color: white;
-        }
-        
-        .promo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .promo-card {
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .promo-price {
-            font-size: 36px;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-        
-        .promo-card .btn {
-            background-color: white;
-            color: #1a6fb0;
-        }
-        
-        .promo-card .btn:hover {
-            background-color: #f0f0f0;
+        .service-item p {
+            color: #64748b;
+            font-size: 0.9rem;
         }
         
         /* Contact Section */
         .contact {
-            background-color: white;
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            color: white;
         }
         
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
         }
         
-        .contact-info p {
-            margin-bottom: 20px;
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-item {
             display: flex;
             align-items: center;
+            margin-bottom: 1rem;
         }
         
-        .contact-info i {
-            margin-right: 10px;
-            color: #1a6fb0;
+        .contact-item .icon {
+            width: 40px;
+            height: 40px;
+            background: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
         }
         
-        .map {
-            height: 400px;
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
             border-radius: 10px;
-            overflow: hidden;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+        }
+        
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
         }
         
         /* Footer */
         footer {
-            background-color: #333;
+            background: #0f172a;
             color: white;
-            padding: 40px 0;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-        }
-        
-        .footer-col h3 {
-            color: white;
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-        
-        .footer-col ul {
-            list-style: none;
-        }
-        
-        .footer-col ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-col ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-col ul li a:hover {
-            color: white;
-        }
-        
-        .copyright {
+            padding: 2rem 0;
             text-align: center;
-            padding-top: 30px;
-            margin-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        /* Responsive Styles */
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #93c5fd;
+        }
+        
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 1rem;
+            color: #94a3b8;
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            .header-container {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
                 flex-direction: column;
+                align-items: center;
             }
             
-            nav ul {
-                margin-top: 20px;
+            .hero-buttons a {
+                width: 80%;
+                text-align: center;
             }
-            
-            .about-content,
-            .contact-grid {
-                grid-template-columns: 1fr;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
             }
-            
-            .hero h2 {
-                font-size: 36px;
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
+        }
+        
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
         }
     </style>
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <img src="/placeholder.svg?height=50&width=50" alt="Gemini Dental Logo">
-                <h1>Gemini Dental</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                    <li><a href="#promotions">Special Offers</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="container">
+            <div class="logo">Gemini STD Clinic</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="tel:+17043569876" class="cta-button">Call Now</a>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <h2>Your Smile, Our Passion</h2>
-            <p>At Gemini Dental, we combine advanced technology with compassionate care to deliver exceptional dental services for your entire family.</p>
-            <a href="#contact" class="btn">Schedule Appointment</a>
+            <div class="hero-content">
+                <h1>Confidential STD Testing in Charlotte</h1>
+                <p>Professional, discreet, and fast STD testing services. Get peace of mind with same-day results.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Schedule Appointment</a>
+                    <a href="tel:+17043569876" class="btn-secondary">Call (704) 356-9876</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Gemini STD Clinic?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Confidential</h3>
+                    <p>Your privacy is our priority. All testing is completely confidential with secure, private consultations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Results</h3>
+                    <p>Get your results quickly with same-day testing available for most STDs. No long waiting periods.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍⚕️</div>
+                    <h3>Expert Care</h3>
+                    <p>Our licensed medical professionals provide compassionate care and accurate testing in a judgment-free environment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Convenient Location</h3>
+                    <p>Located in the heart of Charlotte with easy parking and accessible facilities for all patients.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Competitive pricing with flexible payment options. Most insurance plans accepted.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🕐</div>
+                    <h3>Flexible Hours</h3>
+                    <p>Extended hours including evenings and weekends to accommodate your busy schedule.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2>Our Services</h2>
-            <p class="text-center">We offer comprehensive dental care using the latest techniques and technologies.</p>
-            
+            <h2 class="section-title">Our Testing Services</h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Preventive Dentistry">
-                    </div>
-                    <div class="service-content">
-                        <h3>Preventive Dentistry</h3>
-                        <p>Regular check-ups, cleanings, and preventive treatments to maintain your oral health and prevent future problems.</p>
-                    </div>
+                <div class="service-item">
+                    <h4>Comprehensive STD Panel</h4>
+                    <p>Complete testing for all common STDs including HIV, Chlamydia, Gonorrhea, Syphilis, and Herpes.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Cosmetic Dentistry">
-                    </div>
-                    <div class="service-content">
-                        <h3>Cosmetic Dentistry</h3>
-                        <p>Transform your smile with our range of cosmetic procedures including whitening, veneers, and smile makeovers.</p>
-                    </div>
+                <div class="service-item">
+                    <h4>HIV Testing</h4>
+                    <p>Rapid HIV testing with results in 20 minutes. Anonymous testing available.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Restorative Dentistry">
-                    </div>
-                    <div class="service-content">
-                        <h3>Restorative Dentistry</h3>
-                        <p>Restore damaged or missing teeth with crowns, bridges, implants, and dentures for a functional smile.</p>
-                    </div>
+                <div class="service-item">
+                    <h4>Hepatitis Screening</h4>
+                    <p>Testing for Hepatitis A, B, and C with vaccination services available.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Orthodontics">
-                    </div>
-                    <div class="service-content">
-                        <h3>Orthodontics</h3>
-                        <p>Straighten your teeth and correct bite issues with traditional braces or clear aligners for all ages.</p>
-                    </div>
+                <div class="service-item">
+                    <h4>Individual STD Tests</h4>
+                    <p>Targeted testing for specific concerns including Chlamydia, Gonorrhea, and Trichomonas.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Emergency Dental Care">
-                    </div>
-                    <div class="service-content">
-                        <h3>Emergency Dental Care</h3>
-                        <p>Prompt treatment for dental emergencies including toothaches, broken teeth, and other urgent dental issues.</p>
-                    </div>
+                <div class="service-item">
+                    <h4>Pre-Exposure Prophylaxis (PrEP)</h4>
+                    <p>HIV prevention medication consultation and monitoring for high-risk individuals.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/placeholder.svg?height=200&width=300" alt="Children's Dentistry">
-                    </div>
-                    <div class="service-content">
-                        <h3>Children's Dentistry</h3>
-                        <p>Kid-friendly dental care in a comfortable environment to establish good oral health habits early.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Gemini Dental</h2>
-            
-            <div class="about-content">
-                <div>
-                    <p>Founded in 2005, Gemini Dental has been providing exceptional dental care to our community for over 18 years. Our state-of-the-art facility is equipped with the latest dental technology to ensure you receive the highest quality care.</p>
-                    
-                    <p>Our mission is to create a comfortable, stress-free environment where patients of all ages can receive personalized dental care. We believe in educating our patients about their oral health and involving them in treatment decisions.</p>
-                    
-                    <p>What sets us apart is our commitment to continuous education and staying at the forefront of dental advancements. Our team regularly attends professional development courses to bring you the most current and effective treatments available.</p>
-                    
-                    <p>At Gemini Dental, we don't just treat teeth – we care for people. Your comfort and satisfaction are our top priorities.</p>
-                </div>
-                
-                <div>
-                    <img src="/placeholder.svg?height=400&width=500" alt="Gemini Dental Office">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <p class="text-center">Our experienced team of dental professionals is dedicated to providing you with the best care.</p>
-            
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="/placeholder.svg?height=200&width=200" alt="Dr. Sarah Johnson">
-                    </div>
-                    <h3>Dr. Sarah Johnson</h3>
-                    <p>Lead Dentist</p>
-                    <p>DDS, University of Michigan</p>
-                </div>
-                
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="/placeholder.svg?height=200&width=200" alt="Dr. Michael Chen">
-                    </div>
-                    <h3>Dr. Michael Chen</h3>
-                    <p>Cosmetic Specialist</p>
-                    <p>DMD, Harvard University</p>
-                </div>
-                
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="/placeholder.svg?height=200&width=200" alt="Dr. James Wilson">
-                    </div>
-                    <h3>Dr. James Wilson</h3>
-                    <p>Orthodontist</p>
-                    <p>DDS, NYU College of Dentistry</p>
-                </div>
-                
-                <div class="team-member">
-                    <div class="team-img">
-                        <img src="/placeholder.svg?height=200&width=200" alt="Lisa Martinez">
-                    </div>
-                    <h3>Lisa Martinez</h3>
-                    <p>Dental Hygienist</p>
-                    <p>RDH, 10+ Years Experience</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>What Our Patients Say</h2>
-            
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        <p>"I've been coming to Gemini Dental for years and have always received exceptional care. Dr. Johnson and her team make me feel comfortable and well-cared for during every visit."</p>
-                    </div>
-                    <div class="testimonial-author">- Robert T.</div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        <p>"After years of being afraid of the dentist, I finally found Gemini Dental. Their gentle approach and patience have completely changed my perspective on dental visits."</p>
-                    </div>
-                    <div class="testimonial-author">- Maria S.</div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        <p>"My entire family sees Dr. Chen, and we couldn't be happier with the care we receive. The office is modern, clean, and the staff is always friendly and professional."</p>
-                    </div>
-                    <div class="testimonial-author">- David L.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Promotions Section -->
-    <section id="promotions" class="promotions">
-        <div class="container">
-            <h2>Special Offers</h2>
-            
-            <div class="promo-grid">
-                <div class="promo-card">
-                    <h3>New Patient Special</h3>
-                    <div class="promo-price">$99</div>
-                    <p>Comprehensive exam, full-mouth X-rays, and professional cleaning</p>
-                    <p><small>Regular price: $250</small></p>
-                    <a href="#contact" class="btn">Book Now</a>
-                </div>
-                
-                <div class="promo-card">
-                    <h3>Teeth Whitening</h3>
-                    <div class="promo-price">$299</div>
-                    <p>Professional in-office whitening treatment for a brighter smile</p>
-                    <p><small>Regular price: $450</small></p>
-                    <a href="#contact" class="btn">Book Now</a>
-                </div>
-                
-                <div class="promo-card">
-                    <h3>Invisalign® Special</h3>
-                    <div class="promo-price">$500 OFF</div>
-                    <p>Start your Invisalign treatment and save $500</p>
-                    <p><small>Free consultation included</small></p>
-                    <a href="#contact" class="btn">Book Now</a>
+                <div class="service-item">
+                    <h4>Treatment Services</h4>
+                    <p>On-site treatment for treatable STDs with follow-up care and partner notification services.</p>
                 </div>
             </div>
         </div>
@@ -619,26 +473,75 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            
+            <h2 class="section-title">Get Tested Today</h2>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p><strong>Address:</strong> 123 Smile Avenue, Cityville, ST 12345</p>
-                    <p><strong>Phone:</strong> (555) 123-4567</p>
-                    <p><strong>Email:</strong> info@geminidental.com</p>
-                    
-                    <h3>Office Hours</h3>
-                    <p>Monday - Thursday: 8:00 AM - 5:00 PM</p>
-                    <p>Friday: 8:00 AM - 2:00 PM</p>
-                    <p>Saturday: 9:00 AM - 1:00 PM (By appointment only)</p>
-                    <p>Sunday: Closed</p>
-                    
-                    <a href="#" class="btn">Schedule Appointment</a>
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            (704) 356-9876
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">📧</div>
+                        <div>
+                            <strong>Email:</strong><br>
+                            info@gemini-std-clinic.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">📍</div>
+                        <div>
+                            <strong>Address:</strong><br>
+                            2145 South Boulevard<br>
+                            Charlotte, NC 28203
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">🕐</div>
+                        <div>
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 8:00 AM - 7:00 PM<br>
+                            Sat: 9:00 AM - 5:00 PM<br>
+                            Sun: 10:00 AM - 4:00 PM
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="map">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Map to Gemini Dental">
+                <div class="contact-form">
+                    <h3>Schedule an Appointment</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Preferred Service</label>
+                            <select id="service" name="service" style="width: 100%; padding: 0.75rem; border: none; border-radius: 5px; background: rgba(255,255,255,0.9); color: #333;">
+                                <option value="">Select a service</option>
+                                <option value="comprehensive">Comprehensive STD Panel</option>
+                                <option value="hiv">HIV Testing</option>
+                                <option value="hepatitis">Hepatitis Screening</option>
+                                <option value="individual">Individual STD Test</option>
+                                <option value="prep">PrEP Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" placeholder="Any specific concerns or questions?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Request Appointment</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -647,44 +550,80 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>Gemini Dental</h3>
-                    <p>Providing quality dental care for the whole family in a comfortable and welcoming environment.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
                 </div>
-                
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="#services">Preventive Dentistry</a></li>
-                        <li><a href="#services">Cosmetic Dentistry</a></li>
-                        <li><a href="#services">Restorative Dentistry</a></li>
-                        <li><a href="#services">Orthodontics</a></li>
-                        <li><a href="#services">Emergency Care</a></li>
-                    </ul>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="#">STD Testing</a>
+                    <a href="#">HIV Testing</a>
+                    <a href="#">Hepatitis Screening</a>
+                    <a href="#">PrEP Services</a>
                 </div>
-                
-                <div class="footer-col">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#team">Our Team</a></li>
-                        <li><a href="#promotions">Special Offers</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Patient Portal</a>
+                    <a href="#">Insurance Information</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
-                
-                <div class="footer-col">
-                    <h3>Insurance</h3>
-                    <p>We accept most major dental insurance plans. Contact our office to verify your coverage.</p>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="tel:+17043569876">(704) 356-9876</a>
+                    <a href="mailto:info@gemini-std-clinic.com">info@gemini-std-clinic.com</a>
+                    <a href="#">2145 South Boulevard<br>Charlotte, NC 28203</a>
                 </div>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2025 Gemini Dental. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gemini STD Clinic. All rights reserved. | Licensed Medical Facility | HIPAA Compliant</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your appointment request! We will contact you within 24 hours to confirm your appointment.');
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards and service items
+        document.querySelectorAll('.feature-card, .service-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
